@@ -1,0 +1,40 @@
+<div class="flex flex-col justify-between h-full bg-gray-300 dark:bg-gray-500">
+  <div class="flex flex-col pb-4">
+    <p class="p-2 font-semibold">Technologies</p>
+    <div class="flex flex-col cursor-pointer">
+      <a
+        [routerLink]="technology.value"
+        *ngFor="let technology of technologies | keyvalue"
+        class="h-8 pl-4 hover:bg-gray-100"
+        >{{ technology.key }}</a
+      >
+    </div>
+  </div>
+
+  <div>
+    <button class="ml-auto"></button>
+  </div>
+
+  <!-- <hr /> -->
+  <!-- <div
+    class="flex flex-col flex-auto"
+    *ngIf="technologyPath$ | async as technologyPath"
+  >
+    <a
+      [routerLink]="[technologyPath.base, technologyPath.trigger.base]"
+      class="p-2 link dark:text-red-600"
+      >Trigger</a
+    >
+    <a
+      [routerLink]="[technologyPath.base, technologyPath.schedule.base]"
+      class="p-2 link dark:text-red-600"
+      >Schedule</a
+    >
+    <a
+      [routerLink]="[technologyPath.base, technologyPath.server.base]"
+      class="p-2 link dark:text-red-600"
+      >Server</a
+    >
+    <a class="p-2 link dark:text-red-600">Link 1</a>
+  </div> -->
+</div>
