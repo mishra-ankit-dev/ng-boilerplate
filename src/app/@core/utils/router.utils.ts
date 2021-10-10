@@ -2,7 +2,6 @@ export const ROUTER_UTILS = {
   config: {
     base: {
       home: '',
-      dashboard: 'dashboard',
       technology: 'technology',
     },
     technology: {
