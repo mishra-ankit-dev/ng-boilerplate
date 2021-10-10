@@ -1,6 +1,6 @@
 <!-- <router-outlet></router-outlet> -->
 
-<div *ngIf="currentRouteURL$ | async as currentRouteURL">
+<div class="px-2" *ngIf="currentRouteURL$ | async as currentRouteURL">
   <div *ngIf="routeIsHomeURL(currentRouteURL.url)"></div>
   <div *ngIf="routeIsSettingsURL(currentRouteURL.url)">
     <app-settings-navbar></app-settings-navbar>

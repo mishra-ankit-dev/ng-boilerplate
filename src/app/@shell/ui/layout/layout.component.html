@@ -3,17 +3,13 @@
     <app-header></app-header>
   </div>
   <div class="flex flex-row h-full mt-16">
-    <div *ngIf="isLoggedIn$ | async" class="w-40">
-      <app-sidebar></app-sidebar>
-    </div>
+    <app-sidebar *ngIf="isLoggedIn$ | async" class="w-40"></app-sidebar>
 
     <div class="flex flex-col flex-auto overflow-x-hidden">
       <ng-content></ng-content>
-      <div
+      <app-footer
         style="background-image: url('../../../../assets/Footer/bg-dark.svg')"
-      >
-        <app-footer></app-footer>
-      </div>
+      ></app-footer>
     </div>
   </div>
 </div>
