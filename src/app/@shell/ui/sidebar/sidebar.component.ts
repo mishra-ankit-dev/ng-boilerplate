@@ -10,6 +10,7 @@ import { map } from 'rxjs/operators';
   styleUrls: ['./sidebar.component.scss'],
 })
 export class SideBarComponent implements OnInit {
+  isSidebarOpen = true;
   technologies!: {
     Python: string;
     Java: string;
