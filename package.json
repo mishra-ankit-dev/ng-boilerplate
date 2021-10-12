@@ -4,16 +4,12 @@
   "private": true,
   "scripts": {
     "ng": "ng",
-    "postinstall": "npx husky install",
-    "start": "ng serve",
-    "build": "ng build",
-    "build:stats": "ng build --stats-json",
-    "watch": "ng build --watch --configuration development",
-    "test:unit": "ng test",
-    "test:e2e": "ng e2e",
-    "test:coverage": "ng test --coverage",
+    "e2e": "ng e2e",
+    "test": "ng test",
     "lint": "ng lint",
-    "analyze": "webpack-bundle-analyzer dist/angular-boilerplate/stats.json"
+    "build": "ng build",
+    "start": "node server.js",
+    "postinstall": "ng build --aot --prod"
   },
   "dependencies": {
     "@angular/animations": "~12.2.8",
