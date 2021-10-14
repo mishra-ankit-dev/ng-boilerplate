@@ -12,6 +12,8 @@
     "postinstall": "ng build --aot"
   },
   "dependencies": {
+    "express": "^4.17.1",
+    "compression": "^1.7.4",
     "@angular/animations": "~12.2.8",
     "@angular/common": "~12.2.8",
     "@angular/compiler": "~12.2.8",
