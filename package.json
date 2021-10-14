@@ -65,5 +65,9 @@
     "ts-node": "10.2.1",
     "typescript": "4.3.5",
     "webpack-bundle-analyzer": "4.4.2"
+  },
+  "engines": {
+    "npm": "8.0.0",
+    "node": "16.11.0"
   }
 }
